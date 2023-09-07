@@ -423,13 +423,13 @@
  D  | Y2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2, protocol=hydra, memory |
  D  | _remains=2370154496, reason=m_ui, app_version=1.0.1, device_language=en, sdk_version=4.1.8, app_release=1, uid=10197, caid=915B9 |
  D  | 107C5454E1C9F805934A6A0074F, time_zone=+0530, error=ok, model=Zenfone 5Z, notes={"error_details":""}, carrier=, sd_in_tunnel=0,  |
- D  | connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.chandrayan.vpn, hydra_ |
+ D  | connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.moon.vpn, hydra_ |
  D  | version=v5.1.5-1-g82096efe8, sdk_version_code=404561, android_sdk_int=33, error_code=0, app_build=1338281987}]                   |
  D  ---------------------------------------------------------
  D  registerContentObserver onChange                                                                                                
  D  queueUpload                                                                                                                     
  E  [ERROR:aw_browser_terminator.cc(156)] Renderer process (24704) crash detected (code -1).
----------------------------- PROCESS ENDED (24704) for package com.chandrayan.vpn ----------------------------
+---------------------------- PROCESS ENDED (24704) for package com.moon.vpn ----------------------------
  D  send 1 errors to processor                                                                                                      
  D  processTransportErrors: 1 in state: VPNState{state='CONNECTING_CREDENTIALS}                                                     
  D  connection attempt #0                                                                                                           
@@ -525,7 +525,7 @@
  D  | 5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2, protocol=hydr |
  D  | a, memory_remains=2402603008, reason=m_ui, app_version=1.0.1, device_language=en, sdk_version=4.1.8, app_release=1, uid=10197, c |
  D  | aid=915B9107C5454E1C9F805934A6A0074F, time_zone=+0530, error=ok, model=Zenfone 5Z, notes={"error_details":""}, carrier=, sd_in_t |
- D  | unnel=0, connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.chandrayan.vp |
+ D  | unnel=0, connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.moon.vp |
  D  | n, hydra_version=v5.1.5-1-g82096efe8, sdk_version_code=404561, details=[], android_sdk_int=33, error_code=0, app_build=133828198 |
  D  | 7}]                                                                                                                              |
  D  ---------------------------------------------------------
@@ -571,7 +571,7 @@
  D  Provide url https://d1pijg9qb98hxx.cloudfront.net                                                                               
  V  Requesting https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror                                                                
  V  ---------------------------------------------------------
- V  | Body app=com.chandrayan.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
+ V  | Body app=com.moon.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
  V  | 0%3ATRAFFIC_EXCEED&country_code=&hydra_code=0&exception_name=PartnerApiException%3A200%3ATRAFFIC_EXCEED&hydra_version=v5.1.5-1-g |
  V  | 82096efe8&sdk_version=4.1.8&server_ip=&error_code=0&error_version=100&client_ip=&network_type=&error_data=                       |
  V  ---------------------------------------------------------
@@ -584,7 +584,7 @@
  D  Provide url https://d1pijg9qb98hxx.cloudfront.net                                                                               
  V  Requesting https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror                                                                
  V  ---------------------------------------------------------
- V  | Body app=com.chandrayan.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
+ V  | Body app=com.moon.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
  V  | 0%3ATRAFFIC_EXCEED&country_code=&hydra_code=0&exception_name=PartnerApiException%3A200%3ATRAFFIC_EXCEED&hydra_version=v5.1.5-1-g |
  V  | 82096efe8&sdk_version=4.1.8&server_ip=&error_code=0&error_version=100&client_ip=&network_type=&error_data=                       |
  V  ---------------------------------------------------------
@@ -603,7 +603,7 @@
  D  | ":"779E016132E54A50800F867648BF07E7","sdk_version":"4.1.8","model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJ |
  D  | lYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y |
  D  | 0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2350825472,"seq_no":0,"app_release":"1","connection_type":"WiFi","android_ve |
- D  | rsion_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_v |
+ D  | rsion_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.moon.vpn","carrier":"","sdk_v |
  D  | ersion_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092094294,"device_language":"en"}} |
  D  | {"event":"connection_start_detailed","id":"2","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\"  |
  D  | :\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"4264","uid" |
@@ -611,7 +611,7 @@
  D  | 7","sdk_version":"4.1.8","model":"Zenfone 5Z","details":"[]","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZW |
  D  | ZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YW |
  D  | YxYTA2ZDY2ZDc2","memory_remains":2349289472,"seq_no":1,"app_release":"1","connection_type":"WiFi","android_version_name":"13","h |
- D  | as_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"40456 |
+ D  | as_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.moon.vpn","carrier":"","sdk_version_code":"40456 |
  D  | 1","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092095273,"device_language":"en"}}{"event":"connecti  |
  D  | on_start","id":"3","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1 |
  D  | ","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"3183","uid":10197,"protocol":"hydra","h |
@@ -619,7 +619,7 @@
  D  | del":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmO |
  D  | Tk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2357350400 |
  D  | ,"seq_no":2,"app_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time |
- D  | _zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int" |
+ D  | _zone":"+0530","app_name":"com.moon.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int" |
  D  | :33,"error_code":"0","time":1694092411329,"device_language":"en"}}{"event":"connection_start_detailed","id":"4","properties":{"  |
  D  | af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN" |
  D  | ,"error":"ok","device_manufacturer":"asus","duration":"3183","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8 |
@@ -627,14 +627,14 @@
  D  | memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2 |
  D  | MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2356326400,"seq_no":3,"app_re |
  D  | lease":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app |
- D  | _name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0 |
+ D  | _name":"com.moon.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0 |
  D  | ","time":1694092412314,"device_language":"en"}}{"event":"connection_start","id":"5","properties":{"af_platform":"android","reas  |
  D  | on":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufa |
  D  | cturer":"asus","duration":"3006","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092440438"," |
  D  | caid":"9B676D475D9E476CB2BE8F636601854E","sdk_version":"4.1.8","model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTU |
  D  | yOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZ |
  D  | jM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2334412800,"seq_no":4,"app_release":"1","connection_type":"WiFi","androi |
- D  | d_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","s |
+ D  | d_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.moon.vpn","carrier":"","s |
  D  | dk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092443503,"device_language":"e |
  D  | n"}}{"event":"connection_start_detailed","id":"7","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_detai  |
  D  | ls\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"3006"," |
@@ -642,7 +642,7 @@
  D  | 1854E","sdk_version":"4.1.8","model":"Zenfone 5Z","details":"[]","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2Yj |
  D  | I5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNz |
  D  | g0YWYxYTA2ZDY2ZDc2","memory_remains":2332758016,"seq_no":5,"app_release":"1","connection_type":"WiFi","android_version_name":"13 |
- D  | ","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"4 |
+ D  | ","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.moon.vpn","carrier":"","sdk_version_code":"4 |
  D  | 04561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092444538,"device_language":"en"}}{"event":"conn  |
  D  | ection_start","id":"8","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1 |
  D  | .0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"4499","uid":10197,"protocol":"hydra |
@@ -650,7 +650,7 @@
  D  | ,"model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY |
  D  | 2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":237015 |
  D  | 4496,"seq_no":6,"app_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0"," |
- D  | time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_ |
+ D  | time_zone":"+0530","app_name":"com.moon.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_ |
  D  | int":33,"error_code":"0","time":1694092484071,"device_language":"en"}}{"event":"connection_start_detailed","id":"10","propertie  |
  D  | s":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale" |
  D  | :"IN","error":"ok","device_manufacturer":"asus","duration":"4499","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g8209 |
@@ -658,7 +658,7 @@
  D  | []","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWY |
  D  | xN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2402603008,"seq_no":7,"a |
  D  | pp_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530" |
- D  | ,"app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_cod |
+ D  | ,"app_name":"com.moon.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_cod |
  D  | e":"0","time":1694092485110,"device_language":"en"}}', seq=8}                                                                    |
  D  ---------------------------------------------------------
  D  ---------------------------------------------------------
