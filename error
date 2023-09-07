@@ -1,0 +1,822 @@
+ D  ---------------------------------------------------------
+ D  | StartVPN: session: SessionConfig{virtualLocation='', location=, config=null, dnsConfig=[unified.vpn.sdk.TrafficRule$DomainsRule@ |
+ D  | 35a1443], appPolicy=AppPolicy{policy=0, appList=[]}, extras={}, transport='hydra', reason='m_ui', sessionId='', vpnParams='VpnPa |
+ D  | rams{dns1='198.51.100.1', dns2='198.51.100.1', routes=[Route{route='128.0.0.0', mask=1}, Route{route='0.0.0.0', mask=1}]}', priv |
+ D  | ateGroup='', keepOnReconnect='false', captivePortalBlockBypass='false'}                                                          |
+ D  ---------------------------------------------------------
+ D  Start vpn and check bound                                                                                                       
+ D  Call remote service to start                                                                                                    
+ D  Last stop complete result: null error: null cancelled: false                                                                    
+ D  Starting from reconnect: false scheduled: true                                                                                  
+ D  Start vpn call                                                                                                                  
+ D  startVpnTokenSource set to new com.anchorfree.bolts.CancellationTokenSource@fa83c16[cancellationRequested=false]                
+ D  cancel stopVpnTokenSource                                                                                                       
+ D  stopVpnTokenSource set to new null                                                                                              
+ D  clear errors                                                                                                                    
+ D  ---------------------------------------------------------
+ D  | Set VPN start arguments to VpnStartArguments{virtualLocation='', reason='m_ui', appPolicy=AppPolicy{policy=0, appList=[]}, extra |
+ D  | =Bundle[{extra:transportid=hydra, isCaptivePortalBlockBypass=false, extra_fast_start=false, params:session={"app-policy":{"reaso |
+ D  | n":[],"policy":0},"captive-portal-block-bypass":false,"virtual-location":"","dns-config":[{"type":"domains","domains":["*faceboo |
+ D  | k.com","*wtfismyip.com"],"mode":"bypass","opts":{}}],"extras":{},"keep-service":false,"virtual-location-location":"","ping-delay |
+ D  | ":-1,"private-group":"","proxy-config":[],"reason":"m_ui","session-id":"","transport":"hydra","transport-fallbacks":["openvpn_tc |
+ D  | p","openvpn_udp"],"vpn-params":{"dns1":"198.51.100.1","dns2":"198.51.100.1","routes":[{"mask":1,"route":"128.0.0.0"},{"mask":1," |
+ D  | route":"0.0.0.0"}]}}, transport:ping:delay=-1, transport:extra:mode=hydra, extra:client:info={"baseUrl":"https://awebhtpo3u8g5t. |
+ D  | ecoweb-network.com","carrierId":"touchvpn","urls":["https://awebhtpo3u8g5t.ecoweb-network.com"]}, params:sdk:version=4.1.8, para |
+ D  | ms:credentials=null, isKillSwitchEnabled=false, parent_caid=915B9107C5454E1C9F805934A6A0074F, params:config:version=3}], isKillS |
+ D  | witchEnabled=false, isCaptivePortalBlockBypass=false}                                                                            |
+ D  ---------------------------------------------------------
+ D  Preserve VPN start arguments                                                                                                    
+ D  Initiate start VPN commands sequence                                                                                            
+ E  Invalid ID 0x00000000.
+ D  Start vpn from state VPNState{state='IDLE} cancelled: false                                                                     
+ D  Change state from IDLE to CONNECTING_PERMISSIONS                                                                                
+ D  Change state to CONNECTING_PERMISSIONS                                                                                          
+ D  Vpn state changed to VPNState{state='CONNECTING_PERMISSIONS}                                                                    
+ D  Change state to CONNECTING_PERMISSIONS                                                                                          
+ D  Vpn state changed to VPNState{state='CONNECTING_PERMISSIONS}                                                                    
+ D  Change state from CONNECTING_PERMISSIONS to CONNECTING_CREDENTIALS                                                              
+ D  Change state to CONNECTING_CREDENTIALS                                                                                          
+ D  Vpn state changed to VPNState{state='CONNECTING_CREDENTIALS}                                                                    
+ D  Change state to CONNECTING_CREDENTIALS                                                                                          
+ D  Vpn state changed to VPNState{state='CONNECTING_CREDENTIALS}                                                                    
+ D  Captive portal detection started                                                                                                
+ D  ---------------------------------------------------------
+ D  | Got active network info [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: t |
+ D  | rue, roaming: false]                                                                                                             |
+ D  ---------------------------------------------------------
+ D  getActiveNetwork start                                                                                                          
+ D  Got all Networks []                                                                                                             
+ D  ---------------------------------------------------------
+ D  | check network: 138 info: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: (unspecified), extra: jionet, failover: false,  |
+ D  | available: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: SUPL&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATE |
+ D  | D&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyN |
+ D  | etworkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                          |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 150 info: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available:  |
+ D  | true, roaming: false] cap: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_RO |
+ D  | AMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps TransportInfo |
+ D  | : <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.68.112, Security type: 2, Supplicant sta |
+ D  | te: COMPLETED, Wi-Fi standard: 5, RSSI: -52, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps,  |
+ D  | Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5240MHz, Net ID: -1, Metered hint: false, score: 60, is |
+ D  | Usable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM p |
+ D  | aid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><non |
+ D  | e>MLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -52 Underl |
+ D  | yingNetworks: Null]                                                                                                              |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 154 info: [type: MOBILE[IWLAN], state: CONNECTED/CONNECTED, reason: (unspecified), extra: ims, failover: false, a |
+ D  | vailable: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: IMS&NOT_METERED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING& |
+ D  | FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetw |
+ D  | orkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                             |
+ D  ---------------------------------------------------------
+ D  Got networks [150, 138, 154]                                                                                                    
+ D  ---------------------------------------------------------
+ D  | Got network info NetworkInfoExtendedApi23{networkInfo=[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , |
+ D  | failover: false, available: true, roaming: false], network=150, activeNetworkInfo=[type: WIFI[], state: CONNECTED/CONNECTED, re  |
+ D  | ason: (unspecified), extra: , failover: false, available: true, roaming: false], capabilities=[ Transports: WIFI Capabilities: N |
+ D  | OT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED  |
+ D  | LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00 |
+ D  | :00:00:00:00, IP: /192.168.68.112, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 5, RSSI: -52, Link speed: 866M |
+ D  | bps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, |
+ D  | Frequency: 5240MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPri  |
+ D  | mary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>,  |
+ D  | Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , AP MLD Address: <none>, AP MLO Link Id:  |
+ D  | <none>, AP MLO Affiliated links: <none>> SignalStrength: -52 UnderlyingNetworks: Null]}                                          |
+ D  ---------------------------------------------------------
+ D  Captive portal detection with url http://connectivitycheck.gstatic.com/generate_204 started                                     
+ D  manageNotification: state VPNState{state='CONNECTING_PERMISSIONS}                                                               
+ D  tagSocket(102) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  manageNotification: state VPNState{state='CONNECTING_PERMISSIONS}                                                               
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  tagSocket(102) with statsTag=0xffffffff, statsUid=-1
+ D  manageNotification: state VPNState{state='CONNECTING_CREDENTIALS}                                                               
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  tagSocket(102) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  manageNotification: state VPNState{state='CONNECTING_CREDENTIALS}                                                               
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  Captive portal detection response                                                                                               
+ D  Captive response code: 204 redirect: false content-length: 0                                                                    
+ D  loadCredsTokenSource set to new null                                                                                            
+ E  Invalid ID 0x00000000.
+ D  ---------------------------------------------------------
+ D  | Ensure transport: TransportConfig{name='hydra', vpnTransportClassSpec=ClassSpec{type='unified.vpn.sdk.HydraTransportFactory', pa |
+ D  | rams=[]}, credentialsSourceClassSpec=ClassSpec{type='unified.vpn.sdk.HydraCredentialsSource', params=[]}}                        |
+ D  ---------------------------------------------------------
+ D  Called remoteConfig for carrier: touchvpn                                                                                       
+ D  Clearing allocated file descriptors                                                                                             
+ D  Provide url https://api.pango-paas.co                                                                                           
+ V  ---------------------------------------------------------
+ V  | Requesting https://api.pango-paas.co/user/remoteConfig?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUa |
+ V  | IP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&carrier_id=touchvpn&device_type=android                                             |
+ V  ---------------------------------------------------------
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: remote-config allow: true                                                                                           
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: remote-config allow: true                                                                                           
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: remote-config allow: true                                                                                           
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ W  A resource failed to call close. 
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ V  ---------------------------------------------------------
+ V  | Response received for https://api.pango-paas.co/user/remoteConfig?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZ |
+ V  | WJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&carrier_id=touchvpn&device_type=android in 1405.6ms code: 200            |
+ V  ---------------------------------------------------------
+ D  Mark url https://api.pango-paas.co success                                                                                      
+ D  Mark url https://api.pango-paas.co success                                                                                      
+ D  ---------------------------------------------------------
+ D  | loadConfig carrier: touchvpn got config: CallbackData{body='{"application":{"admob":{"app_foreground":"/21684839133/dfp_touchvpn |
+ D  | _android_appforeground_interstitial","feed":"ca-app-pub-6616020268701194/5965523461","post_connect_interstitial":"/21684839133/d |
+ D  | fp_touchvpn_android_mc_interstitial","post_disconnect_interstitial":"/21684839133/dfp_touchvpn_android_mc_interstitial"},"admobW |
+ D  | aterfall":{"app_foreground":"ca-app-pub-6616020268701194/2697587703","gms_app_foreground_waterfall":["ca-app-pub-661602026870119 |
+ D  | 4/2595190519","ca-app-pub-6616020268701194/2768550528","ca-app-pub-6616020268701194/9837711128"],"gms_feed":"ca-app-pub-66160202 |
+ D  | 68701194/7775365008","gms_feed_waterfall":["ca-app-pub-6616020268701194/2015045513","ca-app-pub-6616020268701194/9646139430","ca |
+ D  | -app-pub-6616020268701194/4449637166"],"gms_post_connect_interstitial_waterfall":["ca-app-pub-6616020268701194/7786262858","ca-a |
+ D  | pp-pub-6616020268701194/2714610012","ca-app-pub-6616020268701194/4589253876"],"gms_post_disconnect_interstitial_waterfall":["ca- |
+ D  | app-pub-6616020268701194/2342364488","ca-app-pub-6616020268701194/7403119479","ca-app-pub-6616020268701194/6090037808"],"post_co |
+ D  | nnect_interstitial":"ca-app-pub-6616020268701194/6636832714","post_disconnect_interstitial":"ca-app-pub-6616020268701194/4010669 |
+ D  | 374"},"admobWaterfall195":{"gms_app_foreground":"ca-app-pub-6616020268701194/3360469088","gms_app_foreground_waterfall":["ca-app |
+ D  | -pub-6616020268701194/5216761641","ca-app-pub-6616020268701194/1277516639","ca-app-pub-6616020268701194/6338271621"],"gms_feed": |
+ D  | "ca-app-pub-6616020268701194/9159590672","gms_feed_waterfall":["ca-app-pub-6616020268701194/5075153239","ca-app-pub-661602026870 |
+ D  | 1194/3762071563","ca-app-pub-6616020268701194/4661108319"],"gms_post_connect_interstitial":"ca-app-pub-6616020268701194/33480266 |
+ D  | 49","gms_post_connect_interstitial_waterfall":["ca-app-pub-6616020268701194/6033011680","ca-app-pub-6616020268701194/8226068365" |
+ D  | ,"ca-app-pub-6616020268701194/1519051603"],"gms_post_disconnect_interstitial":"ca-app-pub-6616020268701194/8748527138","gms_post |
+ D  | _disconnect_interstitial_waterfall":["ca-app-pub-6616020268701194/2791168033","ca-app-pub-6616020268701194/6579806593","ca-app-p |
+ D  | ub-6616020268701194/1469088321"]},"admob_old":{"app_foreground":"ca-app-pub-6616020268701194/4806243932","post_connect_interstit |
+ D  | ial":"ca-app-pub-6616020268701194/8084164492","post_disconnect_interstitial":"ca-app-pub-6616020268701194/1327184451"},"support" |
+ D  | :["support@touchvpn.zendesk.com"]},"files":{"bpl":"04435f1bab151f6addc282890280fd0d58348ba8","cnl":"97d170e1550eee4afc0af065b78c |
+ D  | da302a97674c","test":"https://storage.googleapis.com/af-prod/project/touchvpn/files/test/e25fd8745d153bf8b7de5407147282482687fdf |
+ D  | b"},"disable_optimal_location":false}', httpCode=200}                                                                            |
+ D  ---------------------------------------------------------
+ D  Store carrier: touchvpn config data:                                                                                            
+ D  ---------------------------------------------------------
+ D  | Called credentials for carrier: touchvpn request: CredentialsRequest{country='', connectionType=hydra-tcp, privateGroup='', conf |
+ D  | igVersion='', extras={}}                                                                                                         |
+ D  ---------------------------------------------------------
+ D  Clearing allocated file descriptors                                                                                             
+ D  InternalRetry tag: credentials uuid: b2874887-ca56-4699-a14e-93d3f34e9b4e step: 0 maxRetry: 4                                   
+ D  Will load for                                                                                                                   
+ D  Load creds connection_type: hydra-tcp stored country:  reqCountry:  version: true valid: false                                  
+ D  Reset creds                                                                                                                     
+ D  Reset creds                                                                                                                     
+ D  Provide url https://api.pango-paas.co                                                                                           
+ V  ---------------------------------------------------------
+ V  | Requesting https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vP |
+ V  | b_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=           |
+ V  ---------------------------------------------------------
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: creds allow: true                                                                                                   
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: creds allow: true                                                                                                   
+ D  tagSocket(70) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: creds allow: true                                                                                                   
+ V  ---------------------------------------------------------
+ V  | Response received for https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZj |
+ V  | ViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version |
+ V  | = in 1330.1ms code: 200                                                                                                          |
+ V  ---------------------------------------------------------
+ E                                                                                                                                  
+ E  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ E  Mark url https://api.pango-paas.co failure                                                                                      
+ E  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ E                                                                                                                                  
+ E  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ D  Will handleNetwork with                                                                                                         
+ D  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ D  Will handleUnauthorized with                                                                                                    
+ D  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ D  InternalRetry tag: credentials uuid: b2874887-ca56-4699-a14e-93d3f34e9b4e should retry: false                                   
+ E  InternalRetry tag: credentials uuid: b2874887-ca56-4699-a14e-93d3f34e9b4e giving Up                                             
+ E  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ E                                                                                                                                  
+ E  PartnerApiException{code=200message=nullcontent=TRAFFIC_EXCEED}
+    	at unified.vpn.sdk.ExceptionExtensions.exceptionFromApi(ExceptionExtensions.java:11)
+    	at unified.vpn.sdk.BoltsExtensions.lambda$callbackContinue$0(BoltsExtensions.java:14)
+    	at unified.vpn.sdk.BoltsExtensions$$ExternalSyntheticLambda0.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ D  ---------------------------------------------------------
+ D  | Got credentials for carrier: touchvpn request: CredentialsRequest{country='', connectionType=hydra-tcp, privateGroup='', configV |
+ D  | ersion='', extras={}}                                                                                                            |
+ D  ---------------------------------------------------------
+ E                                                                                                                                  
+ E  unified.vpn.sdk.RequestException: Error on request ApiRequest{url='https://api.pango-paas.co/user/provide?access_token=CAESKAoIdG91Y2h2cG4Q4qjLugYY2ZTo3AYiEGVhMzVkZDEyZWJmZjViZjUaIP3vPb_ibyAsTfL_4RNaXRLVPAol4PbNNKE18ZJhnJzg&app_version=1.0.1&sdk_version=4.1.8&ipaddr=true&type=hydra-tcp&config_version=', method='GET', body='{"result":"TRAFFIC_EXCEED"}'} TRAFFIC_EXCEED
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:36)
+    	at unified.vpn.sdk.NetworkCallback.success(NetworkCallback.java:11)
+    	at unified.vpn.sdk.OkHttpNetworkLayer.lambda$execute$0(OkHttpNetworkLayer.java:310)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$$ExternalSyntheticLambda1.then(Unknown Source:2)
+    	at com.anchorfree.bolts.Task$14.run(Task.java:914)
+    	at com.anchorfree.bolts.BoltsExecutors$ImmediateExecutor.execute(BoltsExecutors.java:108)
+    	at com.anchorfree.bolts.Task.completeImmediately(Task.java:905)
+    	at com.anchorfree.bolts.Task.access$000(Task.java:34)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:681)
+    	at com.anchorfree.bolts.Task$10.then(Task.java:677)
+    	at com.anchorfree.bolts.Task.runContinuations(Task.java:999)
+    	at com.anchorfree.bolts.Task.trySetResult(Task.java:1037)
+    	at com.anchorfree.bolts.TaskCompletionSource.trySetResult(TaskCompletionSource.java:43)
+    	at unified.vpn.sdk.OkHttpNetworkLayer$1.onResponse(OkHttpNetworkLayer.java:280)
+    	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+ D  Captive portal detection started                                                                                                
+ D  ---------------------------------------------------------
+ D  | Got active network info [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: t |
+ D  | rue, roaming: false]                                                                                                             |
+ D  ---------------------------------------------------------
+ D  getActiveNetwork start                                                                                                          
+ D  Got all Networks []                                                                                                             
+ D  ---------------------------------------------------------
+ D  | check network: 138 info: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: (unspecified), extra: jionet, failover: false,  |
+ D  | available: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: SUPL&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATE |
+ D  | D&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyN |
+ D  | etworkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                          |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 150 info: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available:  |
+ D  | true, roaming: false] cap: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_RO |
+ D  | AMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps TransportInfo |
+ D  | : <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.68.112, Security type: 2, Supplicant sta |
+ D  | te: COMPLETED, Wi-Fi standard: 5, RSSI: -52, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps,  |
+ D  | Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5240MHz, Net ID: -1, Metered hint: false, score: 60, is |
+ D  | Usable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM p |
+ D  | aid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><non |
+ D  | e>MLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -52 Underl |
+ D  | yingNetworks: Null]                                                                                                              |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 154 info: [type: MOBILE[IWLAN], state: CONNECTED/CONNECTED, reason: (unspecified), extra: ims, failover: false, a |
+ D  | vailable: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: IMS&NOT_METERED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING& |
+ D  | FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetw |
+ D  | orkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                             |
+ D  ---------------------------------------------------------
+ D  Got networks [150, 138, 154]                                                                                                    
+ D  ---------------------------------------------------------
+ D  | Got network info NetworkInfoExtendedApi23{networkInfo=[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , |
+ D  | failover: false, available: true, roaming: false], network=150, activeNetworkInfo=[type: WIFI[], state: CONNECTED/CONNECTED, re  |
+ D  | ason: (unspecified), extra: , failover: false, available: true, roaming: false], capabilities=[ Transports: WIFI Capabilities: N |
+ D  | OT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED  |
+ D  | LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00 |
+ D  | :00:00:00:00, IP: /192.168.68.112, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 5, RSSI: -52, Link speed: 866M |
+ D  | bps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, |
+ D  | Frequency: 5240MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPri  |
+ D  | mary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>,  |
+ D  | Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , AP MLD Address: <none>, AP MLO Link Id:  |
+ D  | <none>, AP MLO Affiliated links: <none>> SignalStrength: -52 UnderlyingNetworks: Null]}                                          |
+ D  ---------------------------------------------------------
+ D  Captive portal detection with url http://connectivitycheck.gstatic.com/generate_204 started                                     
+ D  tagSocket(104) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  tagSocket(104) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  tagSocket(104) with statsTag=0xffffffff, statsUid=-1
+ D  Bypass tag: captive-portal allow: true                                                                                          
+ D  Captive portal detection response                                                                                               
+ D  Captive response code: 204 redirect: false content-length: 0                                                                    
+ D  ---------------------------------------------------------
+ D  | onVpnDisconnected(unified.vpn.sdk.TrackableException: PartnerApiException{code=200message=nullcontent=TRAFFIC_EXCEED}) on state  |
+ D  | VPNState{state='CONNECTING_CREDENTIALS}                                                                                          |
+ D  ---------------------------------------------------------
+ D  processError: gprReason: a_error e: null                                                                                        
+ V  Connection log:                                                                                                                 
+ D  Get connection info in Thread: 7857                                                                                             
+ D  Read connection for type 1 []                                                                                                   
+ D  Get connection info in Thread: 7857                                                                                             
+ D  Read connection for type 2 []                                                                                                   
+ D  Report connection start with start vpn. Error: null                                                                             
+ D  Tracking connection start with exception null                                                                                   
+ D  sd_tag = null                                                                                                                   
+ D  Report connection start detailed with start vpn. Error: null                                                                    
+ D  Start vpn task is ok, report connection                                                                                         
+ D  ---------------------------------------------------------
+ D  | Track: event: connection_start, params: {duration=4499, reason=m_ui, protocol=hydra, notes={"error_details":""}, connection_type |
+ D  | =WiFi, hydra_version=v5.1.5-1-g82096efe8, catime=1694092479527, caid=915B9107C5454E1C9F805934A6A0074F, sd_in_tunnel=0, error_cod |
+ D  | e=0, is_ipv6_only=0, error=ok}                                                                                                   |
+ D  ---------------------------------------------------------
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 256                                                                                            
+ D  No tracking delegate. Skip                                                                                                      
+ D  ---------------------------------------------------------
+ D  | Trackaction: connection_starttimestamp:1694092484071props: Bundle[{device_manufacturer=asus, has_telephone=true, duration=449    |
+ D  | 9, catime=1694092479527, is_ipv6_only=0, locale=IN, af_hash=X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAw |
+ D  | Y2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2, protocol=hydra, memory |
+ D  | _remains=2370154496, reason=m_ui, app_version=1.0.1, device_language=en, sdk_version=4.1.8, app_release=1, uid=10197, caid=915B9 |
+ D  | 107C5454E1C9F805934A6A0074F, time_zone=+0530, error=ok, model=Zenfone 5Z, notes={"error_details":""}, carrier=, sd_in_tunnel=0,  |
+ D  | connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.chandrayan.vpn, hydra_ |
+ D  | version=v5.1.5-1-g82096efe8, sdk_version_code=404561, android_sdk_int=33, error_code=0, app_build=1338281987}]                   |
+ D  ---------------------------------------------------------
+ D  registerContentObserver onChange                                                                                                
+ D  queueUpload                                                                                                                     
+ E  [ERROR:aw_browser_terminator.cc(156)] Renderer process (24704) crash detected (code -1).
+---------------------------- PROCESS ENDED (24704) for package com.chandrayan.vpn ----------------------------
+ D  send 1 errors to processor                                                                                                      
+ D  processTransportErrors: 1 in state: VPNState{state='CONNECTING_CREDENTIALS}                                                     
+ D  connection attempt #0                                                                                                           
+ D  null no handler found                                                                                                           
+ D  processError: gprReason: a_error e: null in state: VPNState{state='CONNECTING_CREDENTIALS}                                      
+ D  Called stopVpn in state:VPNState{state='CONNECTING_CREDENTIALS} moveToPause: false                                              
+ D  cancel startVpnTokenSource                                                                                                      
+ D  cancel loadCredsTokenSource                                                                                                     
+ D  Cancelled loading credentials                                                                                                   
+ D  loadCredsTokenSource set to new com.anchorfree.bolts.CancellationTokenSource@5545974[cancellationRequested=true]                
+ E  Error in VPN Service 
+ D  startVpnTokenSource set to new null                                                                                             
+ D  Got start task com.anchorfree.bolts.Task@fb6f6ba result: null cancelled: false error: null completed: false                     
+ D  stopVpnTokenSource set to new com.anchorfree.bolts.CancellationTokenSource@defe96b[cancellationRequested=false]                 
+ I  null
+ D  Initiate stop VPN commands sequence in state: VPNState{state='CONNECTING_CREDENTIALS} moveToPause: false                        
+ E  Error in VPN Service 
+ V  Connection log:                                                                                                                 
+ D  Start on VPN always on onCreate                                                                                                 
+ D  Get connection info in Thread: 7857                                                                                             
+ D  Read connection for type 1 []                                                                                                   
+ D  Get connection info in Thread: 7857                                                                                             
+ D  Read connection for type 2 []                                                                                                   
+ V  Connection log:                                                                                                                 
+ D  Get connection info in Thread: 7858                                                                                             
+ D  Read connection for type 1 []                                                                                                   
+ D  Get connection info in Thread: 7858                                                                                             
+ D  Read connection for type 2 []                                                                                                   
+ D  Tracking connection start details with exception null                                                                           
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 256                                                                                            
+ D  No tracking delegate. Skip                                                                                                      
+ D  Start on VPN always on onCreate                                                                                                 
+ D  stop step after getting state                                                                                                   
+ D  Change state from CONNECTING_CREDENTIALS to DISCONNECTING                                                                       
+ D  ---------------------------------------------------------
+ D  | Trackaction: start_vpntimestamp:1694092485062props: Bundle[{internal_extra_action=start_vpn, internal_extra_data={"clientIP":    |
+ D  | "","clientInfo":{"baseUrl":"","carrierId":" ","urls":[]},"countryCode":"","errorCode":0,"errorData":"","errorString":"PartnerApi |
+ D  | Exception:200:TRAFFIC_EXCEED","errorVersion":100,"exception":"PartnerApiException:200:TRAFFIC_EXCEED","hydraCode":0,"hydraVersio |
+ D  | n":"v5.1.5-1-g82096efe8","networkIPType":"","networkName":"","networkType":"","serverIP":""}}]                                   |
+ V  Connection log:                                                                                                                 
+ D  ---------------------------------------------------------
+ D  Change state to DISCONNECTING                                                                                                   
+ D  Get connection info in Thread: 7858                                                                                             
+ D  Vpn state changed to VPNState{state='DISCONNECTING}                                                                             
+ D  Change state to DISCONNECTING                                                                                                   
+ D  ---------------------------------------------------------
+ D  | Stop vpn called in service on state VPNState{state='CONNECTING_CREDENTIALS} exception PartnerApiException{code=200message=nullco |
+ D  Vpn state changed to VPNState{state='DISCONNECTING}                                                                             
+ D  | ntent=TRAFFIC_EXCEED}                                                                                                            |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | stopVpnBaseOnCurrentState(VPNState{state='CONNECTING_CREDENTIALS}, a_error, java.util.concurrent.Executors$DelegatedScheduledExe |
+ D  | cutorService@afca447)                                                                                                            |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  Read connection for type 1 []                                                                                                   
+ D  | Track: event: connection_start_detailed, params: {reason=m_ui, notes={"error_details":""}, connection_type=WiFi, sd_in_tunnel=0, |
+ D  | is_ipv6_only=0, error=ok, duration=4499, protocol=hydra, hydra_version=v5.1.5-1-g82096efe8, catime=1694092479527, caid=915B9107  |
+ D  | C5454E1C9F805934A6A0074F, details=[], error_code=0}                                                                              |
+ D  ---------------------------------------------------------
+ D  Get connection info in Thread: 7858                                                                                             
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 256                                                                                            
+ D  Read connection for type 2 []                                                                                                   
+ D  unsubscribeFromTransport                                                                                                        
+ D  called stopVpn in Thread: 7907                                                                                                  
+ D  Hydra stopped. Skip                                                                                                             
+ D  Notify idle state with isHydraRunning: false                                                                                    
+ D  Event connection end details sent, notify callbacks; moveToPause: false                                                         
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  stopReconnection                                                                                                                
+ D  Change state from DISCONNECTING to IDLE                                                                                         
+ D  manageNotification: state VPNState{state='DISCONNECTING}                                                                        
+ D  Handling message with daemon id: 256                                                                                            
+ D  registerContentObserver onChange                                                                                                
+ D  queueUpload                                                                                                                     
+ D  stopReconnection                                                                                                                
+ D  Change state to IDLE                                                                                                            
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Vpn state changed to VPNState{state='IDLE}                                                                                      
+ D  Handling message with daemon id: 512                                                                                            
+ D  Change state to IDLE                                                                                                            
+ D  Finish stop VPN commands sequence with moveToPause: false                                                                       
+ D  Callback stop VPN commands sequence error: null cancelled: false moveToPause: false                                             
+ D  Vpn state changed to VPNState{state='IDLE}                                                                                      
+ D  No tracking delegate. Skip                                                                                                      
+ D  No tracking delegate. Skip                                                                                                      
+ D  Got idle/paused state. cancel test                                                                                              
+ D  ---------------------------------------------------------
+ D  | Trackaction: connection_start_detailedtimestamp:1694092485110props: Bundle[{device_manufacturer=asus, has_telephone=true, dur    |
+ D  | ation=4499, catime=1694092479527, is_ipv6_only=0, locale=IN, af_hash=X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM |
+ D  | 5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2, protocol=hydr |
+ D  | a, memory_remains=2402603008, reason=m_ui, app_version=1.0.1, device_language=en, sdk_version=4.1.8, app_release=1, uid=10197, c |
+ D  | aid=915B9107C5454E1C9F805934A6A0074F, time_zone=+0530, error=ok, model=Zenfone 5Z, notes={"error_details":""}, carrier=, sd_in_t |
+ D  | unnel=0, connection_type=WiFi, af_platform=android, android_version_name=13, memory_total=5953499136, app_name=com.chandrayan.vp |
+ D  | n, hydra_version=v5.1.5-1-g82096efe8, sdk_version_code=404561, details=[], android_sdk_int=33, error_code=0, app_build=133828198 |
+ D  | 7}]                                                                                                                              |
+ D  ---------------------------------------------------------
+ E  success: IDLE
+ D  manageNotification: state VPNState{state='DISCONNECTING}                                                                        
+ V  Requesting https://api64.ipify.org/?format=json                                                                                 
+ D  Got idle/paused state. cancel test                                                                                              
+ V  Requesting https://api64.ipify.org/?format=json                                                                                 
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  tagSocket(113) with statsTag=0xffffffff, statsUid=-1
+ D  registerContentObserver onChange                                                                                                
+ D  ---------------------------------------------------------
+ D  queueUpload                                                                                                                     
+ D  | Trackaction: start_vpntimestamp:1694092485136props: Bundle[{internal_extra_action=start_vpn, internal_extra_data={"clientIP":    |
+ D  | "","clientInfo":{"baseUrl":"","carrierId":" ","urls":[]},"countryCode":"","errorCode":0,"errorData":"","errorString":"PartnerApi |
+ D  | Exception:200:TRAFFIC_EXCEED","errorVersion":100,"exception":"PartnerApiException:200:TRAFFIC_EXCEED","hydraCode":0,"hydraVersio |
+ D  tagSocket(216) with statsTag=0xffffffff, statsUid=-1
+ D  | n":"v5.1.5-1-g82096efe8","networkIPType":"","networkName":"","networkType":"","serverIP":""}}]                                   |
+ D  ---------------------------------------------------------
+ D  manageNotification: state VPNState{state='IDLE}                                                                                 
+ D  registerContentObserver onChange                                                                                                
+ D  queueUpload                                                                                                                     
+ D  Check cnl for carrier: touchvpn path: / length: 0                                                                               
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  manageNotification: state VPNState{state='IDLE}                                                                                 
+ D  Check cnl for carrier: touchvpn path: / length: 0                                                                               
+ D  return service task com.anchorfree.bolts.Task@6a7b15d result: unified.vpn.sdk.DaemonsService$IncomingHandler@50e1ef error: null 
+ D  Handling message with daemon id: 512                                                                                            
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ V  Response received for https://api64.ipify.org/?format=json in 1267.3ms code: 200                                                
+ V  Response received for https://api64.ipify.org/?format=json in 1266.4ms code: 200                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  performUpload                                                                                                                   
+ D  Tracker upload: internal                                                                                                        
+ D  Provide url https://d1pijg9qb98hxx.cloudfront.net                                                                               
+ V  Requesting https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror                                                                
+ V  ---------------------------------------------------------
+ V  | Body app=com.chandrayan.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
+ V  | 0%3ATRAFFIC_EXCEED&country_code=&hydra_code=0&exception_name=PartnerApiException%3A200%3ATRAFFIC_EXCEED&hydra_version=v5.1.5-1-g |
+ V  | 82096efe8&sdk_version=4.1.8&server_ip=&error_code=0&error_version=100&client_ip=&network_type=&error_data=                       |
+ V  ---------------------------------------------------------
+ D  tagSocket(106) with statsTag=0xffffffff, statsUid=-1
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ V  Response received for https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror in 388.3ms code: 401                                
+ D  Mark url https://d1pijg9qb98hxx.cloudfront.net success                                                                          
+ D  Mark url https://d1pijg9qb98hxx.cloudfront.net success                                                                          
+ D  Provide url https://d1pijg9qb98hxx.cloudfront.net                                                                               
+ V  Requesting https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror                                                                
+ V  ---------------------------------------------------------
+ V  | Body app=com.chandrayan.vpn&network_ip_type=&app_version=1.0.1&network_name=&access_token=&error_string=PartnerApiException%3A20 |
+ V  | 0%3ATRAFFIC_EXCEED&country_code=&hydra_code=0&exception_name=PartnerApiException%3A200%3ATRAFFIC_EXCEED&hydra_version=v5.1.5-1-g |
+ V  | 82096efe8&sdk_version=4.1.8&server_ip=&error_code=0&error_version=100&client_ip=&network_type=&error_data=                       |
+ V  ---------------------------------------------------------
+ D  tagSocket(109) with statsTag=0xffffffff, statsUid=-1
+ V  Response received for https://d1pijg9qb98hxx.cloudfront.net/user/hydraerror in 328.2ms code: 401                                
+ D  Mark url https://d1pijg9qb98hxx.cloudfront.net success                                                                          
+ D  Mark url https://d1pijg9qb98hxx.cloudfront.net success                                                                          
+ D  Tracker upload: default                                                                                                         
+ D  upload                                                                                                                          
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  ---------------------------------------------------------
+ D  | Perform Request data: SerializeResult{data='{"event":"connection_start","id":"1","properties":{"af_platform":"android","reason": |
+ D  | "m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufactur |
+ D  | er":"asus","duration":"4264","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092089980","caid |
+ D  | ":"779E016132E54A50800F867648BF07E7","sdk_version":"4.1.8","model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJ |
+ D  | lYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y |
+ D  | 0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2350825472,"seq_no":0,"app_release":"1","connection_type":"WiFi","android_ve |
+ D  | rsion_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_v |
+ D  | ersion_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092094294,"device_language":"en"}} |
+ D  | {"event":"connection_start_detailed","id":"2","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\"  |
+ D  | :\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"4264","uid" |
+ D  | :10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092089980","caid":"779E016132E54A50800F867648BF07E |
+ D  | 7","sdk_version":"4.1.8","model":"Zenfone 5Z","details":"[]","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZW |
+ D  | ZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YW |
+ D  | YxYTA2ZDY2ZDc2","memory_remains":2349289472,"seq_no":1,"app_release":"1","connection_type":"WiFi","android_version_name":"13","h |
+ D  | as_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"40456 |
+ D  | 1","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092095273,"device_language":"en"}}{"event":"connecti  |
+ D  | on_start","id":"3","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1 |
+ D  | ","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"3183","uid":10197,"protocol":"hydra","h |
+ D  | ydra_version":"v5.1.5-1-g82096efe8","catime":"1694092408099","caid":"628B917D2ABF470F90C1C76D3BDD4B19","sdk_version":"4.1.8","mo |
+ D  | del":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmO |
+ D  | Tk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2357350400 |
+ D  | ,"seq_no":2,"app_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time |
+ D  | _zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int" |
+ D  | :33,"error_code":"0","time":1694092411329,"device_language":"en"}}{"event":"connection_start_detailed","id":"4","properties":{"  |
+ D  | af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN" |
+ D  | ,"error":"ok","device_manufacturer":"asus","duration":"3183","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8 |
+ D  | ","catime":"1694092408099","caid":"628B917D2ABF470F90C1C76D3BDD4B19","sdk_version":"4.1.8","model":"Zenfone 5Z","details":"[]"," |
+ D  | memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2 |
+ D  | MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2356326400,"seq_no":3,"app_re |
+ D  | lease":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app |
+ D  | _name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0 |
+ D  | ","time":1694092412314,"device_language":"en"}}{"event":"connection_start","id":"5","properties":{"af_platform":"android","reas  |
+ D  | on":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufa |
+ D  | cturer":"asus","duration":"3006","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092440438"," |
+ D  | caid":"9B676D475D9E476CB2BE8F636601854E","sdk_version":"4.1.8","model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTU |
+ D  | yOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZ |
+ D  | jM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2334412800,"seq_no":4,"app_release":"1","connection_type":"WiFi","androi |
+ D  | d_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","s |
+ D  | dk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092443503,"device_language":"e |
+ D  | n"}}{"event":"connection_start_detailed","id":"7","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_detai  |
+ D  | ls\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"3006"," |
+ D  | uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092440438","caid":"9B676D475D9E476CB2BE8F63660 |
+ D  | 1854E","sdk_version":"4.1.8","model":"Zenfone 5Z","details":"[]","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2Yj |
+ D  | I5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNz |
+ D  | g0YWYxYTA2ZDY2ZDc2","memory_remains":2332758016,"seq_no":5,"app_release":"1","connection_type":"WiFi","android_version_name":"13 |
+ D  | ","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"4 |
+ D  | 04561","app_build":1338281987,"android_sdk_int":33,"error_code":"0","time":1694092444538,"device_language":"en"}}{"event":"conn  |
+ D  | ection_start","id":"8","properties":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1 |
+ D  | .0.1","is_ipv6_only":"0","locale":"IN","error":"ok","device_manufacturer":"asus","duration":"4499","uid":10197,"protocol":"hydra |
+ D  | ","hydra_version":"v5.1.5-1-g82096efe8","catime":"1694092479527","caid":"915B9107C5454E1C9F805934A6A0074F","sdk_version":"4.1.8" |
+ D  | ,"model":"Zenfone 5Z","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY |
+ D  | 2NmOTk1NTQ2ZTE1NWYxN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":237015 |
+ D  | 4496,"seq_no":6,"app_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0"," |
+ D  | time_zone":"+0530","app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_ |
+ D  | int":33,"error_code":"0","time":1694092484071,"device_language":"en"}}{"event":"connection_start_detailed","id":"10","propertie  |
+ D  | s":{"af_platform":"android","reason":"m_ui","notes":"{\"error_details\":\"\"}","app_version":"1.0.1","is_ipv6_only":"0","locale" |
+ D  | :"IN","error":"ok","device_manufacturer":"asus","duration":"4499","uid":10197,"protocol":"hydra","hydra_version":"v5.1.5-1-g8209 |
+ D  | 6efe8","catime":"1694092479527","caid":"915B9107C5454E1C9F805934A6A0074F","sdk_version":"4.1.8","model":"Zenfone 5Z","details":" |
+ D  | []","memory_total":5953499136,"af_hash":"X2RiZTUyOWJlYzQ5OTEwNDM2YjI5ZWZlZmUyODU2ODRiNjdkNmI1MmFhZmM5NDhhYjAwY2NmOTk1NTQ2ZTE1NWY |
+ D  | xN2Q2MGM4YzcxZGZkNDQ3YWJjMWVhZjE1NDY5MDAxZWEyZGZjM2Y0ZDI0ZmM2MTJiNzg0YWYxYTA2ZDY2ZDc2","memory_remains":2402603008,"seq_no":7,"a |
+ D  | pp_release":"1","connection_type":"WiFi","android_version_name":"13","has_telephone":true,"sd_in_tunnel":"0","time_zone":"+0530" |
+ D  | ,"app_name":"com.chandrayan.vpn","carrier":"","sdk_version_code":"404561","app_build":1338281987,"android_sdk_int":33,"error_cod |
+ D  | e":"0","time":1694092485110,"device_language":"en"}}', seq=8}                                                                    |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | Got active network info [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: t |
+ D  | rue, roaming: false]                                                                                                             |
+ D  ---------------------------------------------------------
+ D  getActiveNetwork start                                                                                                          
+ D  Got all Networks []                                                                                                             
+ D  ---------------------------------------------------------
+ D  | check network: 138 info: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: (unspecified), extra: jionet, failover: false,  |
+ D  | available: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: SUPL&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATE |
+ D  | D&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyN |
+ D  | etworkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                          |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 150 info: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available:  |
+ D  | true, roaming: false] cap: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_RO |
+ D  | AMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=12000Kbps LinkDnBandwidth>=60000Kbps TransportInfo |
+ D  | : <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.68.112, Security type: 2, Supplicant sta |
+ D  | te: COMPLETED, Wi-Fi standard: 5, RSSI: -52, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps,  |
+ D  | Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5240MHz, Net ID: -1, Metered hint: false, score: 60, is |
+ D  | Usable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM p |
+ D  | aid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><non |
+ D  | e>MLO Information: , AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>> SignalStrength: -52 Underl |
+ D  | yingNetworks: Null]                                                                                                              |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | check network: 154 info: [type: MOBILE[IWLAN], state: CONNECTED/CONNECTED, reason: (unspecified), extra: ims, failover: false, a |
+ D  | vailable: true, roaming: false] cap: [ Transports: CELLULAR Capabilities: IMS&NOT_METERED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING& |
+ D  | FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=14Kbps LinkDnBandwidth>=14Kbps Specifier: <TelephonyNetw |
+ D  | orkSpecifier [mSubId = 3]> UnderlyingNetworks: Null]                                                                             |
+ D  ---------------------------------------------------------
+ D  Got networks [150, 138, 154]                                                                                                    
+ D  Got domains from embedded config: event.northghost.com                                                                          
+ D  Return url from embedded config: https://event.northghost.com/api/report/hydra_kit state: VPNState{state='IDLE}                 
+ D  tagSocket(112) with statsTag=0xffffffff, statsUid=-1
+ D  tagSocket(112) with statsTag=0xffffffff, statsUid=-1
+ D  tagSocket(112) with statsTag=0xffffffff, statsUid=-1
+ D  tagSocket(112) with statsTag=0xffffffff, statsUid=-1
+ I  [javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+ I  error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+ I  error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000), javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+ I  error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+ I  error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000), javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+ I  error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+ I  error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)]
+ D  ---------------------------------------------------------
+ D  | Mark url: https://event.northghost.com/api/report/hydra_kit as success: false with exception javax.net.ssl.SSLHandshakeException |
+ D  | : Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol errorerror:10000410:SSL routines:OPENSSL_internal:SS  |
+ D  | LV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)error:1000009a:SSL routines:O  |
+ D  | PENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)          |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | Mark url: https://event.northghost.com/api/report/hydra_kit as success: false with exception javax.net.ssl.SSLHandshakeException |
+ D  | : Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol errorerror:10000410:SSL routines:OPENSSL_internal:SS  |
+ D  | LV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)error:1000009a:SSL routines:O  |
+ D  | PENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)          |
+ D  ---------------------------------------------------------
+ D  ---------------------------------------------------------
+ D  | Mark url: https://event.northghost.com/api/report/hydra_kit as success: false with exception javax.net.ssl.SSLHandshakeException |
+ D  | : Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol errorerror:10000410:SSL routines:OPENSSL_internal:SS  |
+ D  | LV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)error:1000009a:SSL routines:O  |
+ D  | PENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)          |
+ D  ---------------------------------------------------------
+ E                                                                                                                                  
+ E  javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    	at com.android.org.conscrypt.SSLUtils.toSSLHandshakeException(SSLUtils.java:363)
+    	at com.android.org.conscrypt.ConscryptEngine.convertException(ConscryptEngine.java:1134)
+    	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:919)
+    	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:747)
+    	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:712)
+    	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.processDataFromSocket(ConscryptEngineSocket.java:858)
+    	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.-$$Nest$mprocessDataFromSocket(Unknown Source:0)
+    	at com.android.org.conscrypt.ConscryptEngineSocket.doHandshake(ConscryptEngineSocket.java:241)
+    	at com.android.org.conscrypt.ConscryptEngineSocket.startHandshake(ConscryptEngineSocket.java:220)
+    	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+    	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+    	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+    	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+    	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+    	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+    	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+    	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+    	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+    	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+    	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+    	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+    	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+    	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+    	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+    	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+    	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+    	at unified.vpn.sdk.DefaultTrackerTransport.upload(DefaultTrackerTransport.java:78)
+    	at unified.vpn.sdk.EventsTracker.uploadForTracker(EventsTracker.java:92)
+    	at unified.vpn.sdk.EventsTracker.lambda$performUpload$2$unified-vpn-sdk-EventsTracker(EventsTracker.java:79)
+    	at unified.vpn.sdk.EventsTracker$$ExternalSyntheticLambda2.run(Unknown Source:2)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    	at java.lang.Thread.run(Thread.java:1012)
+    	Suppressed: javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		... 33 more
+    	Caused by: javax.net.ssl.SSLProtocolException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+ E  error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+    		at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:569)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1095)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1079)
+    		at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:876)
+    		... 30 more
+    	Suppressed: javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		... 33 more
+    	Caused by: javax.net.ssl.SSLProtocolException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+    		at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:569)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1095)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1079)
+    		at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:876)
+    		... 30 more
+    	Suppressed: javax.net.ssl.SSLHandshakeException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		... 33 more
+    	Caused by: javax.net.ssl.SSLProtocolException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    		at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+    		at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:569)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1095)
+    		at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1079)
+    		at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:876)
+    		... 30 more
+    Caused by: javax.net.ssl.SSLProtocolException: Read error: ssl=0x75a0d21958: Failure in SSL library, usually a protocol error
+    error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/tls_record.cc:594 0x75c0d239b8:0x00000001)
+    error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/handshake.cc:644 0x74f5070c6c:0x00000000)
+    	at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+    	at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:569)
+    	at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1095)
+    	at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1079)
+ E  	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:876)
+    	... 30 more
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
+ D  got empty scan results, reschedule                                                                                              
+ D  Scheduling scan results runnable                                                                                                
